@@ -67,25 +67,3 @@ data_z <- data.frame(lapply(num_redData,scale))
 melanoma_pca <- prcomp(data_z)
 cumsum_pca <- (cumsum(melanoma_pca$sdev^2)/sum(melanoma_pca$sdev^2))*100
 sum(cumsum_pca[1:5]) # 62 % contribution from these 5 PCs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
